@@ -31,7 +31,6 @@ class NoteDelete(generics.DestroyAPIView):
         user = self.request.user
         return Note.objects.filter(author = user)
 
-
         
 
 class CreateUserView(generics.CreateAPIView):
